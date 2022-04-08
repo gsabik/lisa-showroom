@@ -1,9 +1,11 @@
-import { Container, Heading } from "@chakra-ui/react"
+import { Container, Flex, Heading } from "@chakra-ui/react"
 
 const AboutUs = () => {
     return (
         <Container>
-            <Heading>About us</Heading>
+            <Flex justifyContent="center">
+                <Heading py={6}>About us</Heading>
+            </Flex>
         </Container>
     )
 }

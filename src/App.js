@@ -3,6 +3,7 @@ import NavBar from './components/NavBar/NavBar/NavBar';
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Contact from "./components/Contact/Contact";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ItemListContainer/>}></Route>
           <Route path="/category/:brandId" element={<ItemListContainer></ItemListContainer>}></Route> 
+          <Route path="/item/:itemId" element={<ItemDetailContainer></ItemDetailContainer>}></Route>
           <Route path="/aboutus" element={<AboutUs/>}></Route>
           <Route path="/contact" element={<Contact/>}></Route>
         </Routes>

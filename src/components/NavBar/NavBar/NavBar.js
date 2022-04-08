@@ -4,7 +4,7 @@ import CartWidget from "../CartWidget/CartWidget"
 
 const NavBar = () => {
     return (
-    <Flex w="full" py={6} justifyContent="space-around" bg="gray.200"> 
+    <Flex w="full" py={6} justifyContent="space-around" bg="gray.50"> 
         <Link to="/"><Heading>Lisa Showroom</Heading></Link>
         <HStack>
             <Link to="/"><Text px={4}>Home</Text></Link>
