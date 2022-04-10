@@ -1,5 +1,5 @@
 import { Text, Icon, Flex } from "@chakra-ui/react"
-import {FaShoppingCart} from "react-icons/fa"
+import { FaShoppingCart } from "react-icons/fa"
 
 const CartWidget = () => {
     return (

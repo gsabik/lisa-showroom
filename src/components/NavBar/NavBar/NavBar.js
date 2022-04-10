@@ -1,5 +1,6 @@
 import { Flex, Heading, HStack, Text } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
+import MenuBrands from "../MenuBrands/MenuBrands"
 import CartWidget from "../CartWidget/CartWidget"
 
 const NavBar = () => {
@@ -10,8 +11,9 @@ const NavBar = () => {
             <Link to="/"><Text fontWeight="500" px={4}>Home</Text></Link>
             <Link to="/aboutus"><Text fontWeight="500" px={4}>About us</Text></Link>
             <Link to="/contact"><Text fontWeight="500" px={4}>Contact</Text></Link>
+            <MenuBrands/>
         </HStack>
-        <CartWidget/>
+        <Link to="/cart"><CartWidget/></Link>
     </Flex>
     )
 }

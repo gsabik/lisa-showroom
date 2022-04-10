@@ -4,7 +4,7 @@ import Item from "./Item/Item"
 
 const ItemList = ({products}) => {
     return (
-        <Grid templateColumns="repeat(3, 1fr)" gap={10} justifyItems="center">
+        <Grid templateColumns="repeat(3, 1fr)" gap={10}>
             {products.map((product) => <Item product={product} key={product.id}></Item>)}
         </Grid>
     )

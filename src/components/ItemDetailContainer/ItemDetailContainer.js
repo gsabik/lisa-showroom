@@ -27,7 +27,7 @@ const ItemDetailContainer = () => {
 
     return (
         <Container maxW="container.xl" p={0}>
-            <Center h="100vh" py={20}>
+            <Center h="75vh" py={20}>
             {
                 loading
                 ?
