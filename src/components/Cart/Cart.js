@@ -11,7 +11,7 @@ const Cart = () => {
         return(
             <Center h="75vh">
                 <VStack>
-                    <Heading pb={4}>You cart is clean. Go to home to add products!</Heading>
+                    <Heading pb={4}>You cart is empty. Go to home to add products!</Heading>
                     <Link to="/"><Button>Home</Button></Link>
                 </VStack>
             </Center>
