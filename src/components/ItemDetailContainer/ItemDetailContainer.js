@@ -2,8 +2,9 @@ import { db } from "../../firebase/config"
 import { doc, getDoc } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Container, Flex, Text } from "@chakra-ui/react"
+import { Center, Container, Flex, Text } from "@chakra-ui/react"
 import ItemDetail from "./ItemDetail/ItemDetail";
+import Loader from "../Loader/Loader";
 
 const ItemDetailContainer = () => {
 
@@ -26,15 +27,15 @@ const ItemDetailContainer = () => {
 
     return (
         <Container maxW="container.xl" p={0}>
-            <Flex h="100vh" py={20}>
+            <Center h="100vh" py={20}>
             {
                 loading
                 ?
-                <Text>loading...</Text>
+                <Loader/>
                 :
                 <ItemDetail {...item}/>
             }     
-            </Flex>
+            </Center>
         </Container>
     )
 }

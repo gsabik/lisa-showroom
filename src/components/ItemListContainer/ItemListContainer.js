@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import { Container, Flex, Heading, Text } from "@chakra-ui/react"
 import ItemList from "./ItemList/ItemList";
 import Filter from "../Filter/Filter"
+import Loader from "../Loader/Loader";
 
 const ItemListContainer = () => {
 
@@ -40,7 +41,7 @@ const ItemListContainer = () => {
             {
                 loading
                 ?
-                <Text>Loading...</Text>
+                <Loader/>
                 :
                 <ItemList products={products}></ItemList>
             }
