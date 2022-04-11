@@ -1,15 +1,16 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../../../context/CartContext";
-import { VStack, Image, Text, Heading, HStack, Button } from "@chakra-ui/react"
-import ItemCount from "./ItemCount/ItemCount"
 import { Link } from "react-router-dom";
+import { VStack, Image, Text, Heading, HStack, Button } from "@chakra-ui/react"
+import { useToast } from "@chakra-ui/react";
+import ItemCount from "./ItemCount/ItemCount"
 
 const ItemDetail = ({id, brand, model, color, price, img, description, stock}) => {
     const [count, setCount] = useState(1);
     const {cart, addToCart, isInCart} = useContext(CartContext);
+    const toastAdd = useToast();
     
     const handleAdd = () => {
-
         if(!isInCart(id)) {
             const addItem = {
                 id,
@@ -21,12 +22,18 @@ const ItemDetail = ({id, brand, model, color, price, img, description, stock}) =
             }
             addToCart(addItem);
         }
+        toastAdd({
+            position:"bottom-right",
+            description: "Added product to cart",
+            status: "success",
+            duration: 5000,
+        })
     }
 
     return (
         <>
             <VStack w="full" h="full" p={10} spacing={10} alignItems="center">
-                <Image src={img}></Image>
+                <Image src={img} h="full"></Image>
             </VStack>
             <VStack w="full" h="full"p={10} spacing={10} alignItems="center">
                 <Heading>{brand} {model}</Heading>
