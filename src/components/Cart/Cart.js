@@ -35,8 +35,8 @@ const Cart = () => {
             ))
         }
         <HStack justifyContent="space-around" pt={6}>
-            <Button colorScheme="blackAlpha" color="blackAlpha" variant="outline" onClick={cleanCart}>Clean</Button>
-            <Button colorScheme="blackAlpha" bgColor="blackAlpha.900" color="white" _hover={{ bg:"blackAlpha" }}>Checkout</Button>
+            <Button onClick={cleanCart}>Clean</Button>
+            <Link to="/checkout"><Button>Checkout</Button></Link>
             <Text fontSize="lg" fontWeight="500">Total: ${totalPriceCart()},00</Text>
         </HStack>
     </Container>

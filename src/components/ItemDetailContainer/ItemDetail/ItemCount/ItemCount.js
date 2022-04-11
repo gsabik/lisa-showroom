@@ -24,7 +24,7 @@ const ItemCount = ({stock, count, setCount, handleAdd}) => {
             <Text w="2rem" textAlign="center">{count}</Text>
             <Button variant="outline" borderColor="gray.500" onClick={handleIncrement}><Icon as={BsPlus}/></Button>
         </HStack>
-        <Button w="15rem" colorScheme="blackAlpha" bgColor="blackAlpha.900" color="white" _hover={{ bgColor:"blackAlpha" }} onClick={handleAdd}>Add to cart</Button>
+        <Button w="15rem"onClick={handleAdd}>Add to cart</Button>
     </HStack>
     )
 }

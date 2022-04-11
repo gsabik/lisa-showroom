@@ -1,13 +1,13 @@
 import { Container, Flex, Heading } from "@chakra-ui/react"
 
-const Contact = () => {
+const Providers = () => {
     return (
         <Container>
             <Flex justifyContent="center">
-                <Heading py={6}>Contact</Heading>
+                <Heading py={6}>Providers</Heading>
             </Flex>
         </Container>
     )
 }
 
-export default Contact
+export default Providers
