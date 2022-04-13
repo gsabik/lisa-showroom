@@ -4,7 +4,11 @@ import { Text, Icon, Flex } from "@chakra-ui/react"
 import { FaShoppingCart } from "react-icons/fa"
 
 const CartWidget = () => {
-    const {countCart} = useContext(CartContext)
+    const {cart, countCart} = useContext(CartContext);
+
+    if (cart.length === 0) {
+        return
+    }
 
     return (
         <Flex pt={2}>

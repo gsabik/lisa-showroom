@@ -2,9 +2,9 @@ import { Container, Flex, Heading } from "@chakra-ui/react"
 
 const Providers = () => {
     return (
-        <Container>
+        <Container py={10}>
             <Flex justifyContent="center">
-                <Heading py={6}>Providers</Heading>
+                <Heading pb={6}>Providers</Heading>
             </Flex>
         </Container>
     )

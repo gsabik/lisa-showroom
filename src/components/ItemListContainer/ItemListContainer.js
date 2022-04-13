@@ -2,9 +2,8 @@ import { db } from "../../firebase/config"
 import { collection, getDocs, query, where } from "firebase/firestore"
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Container, Flex, Heading, Text } from "@chakra-ui/react"
+import { Container, Flex, Heading} from "@chakra-ui/react"
 import ItemList from "./ItemList/ItemList";
-import Filter from "../Filter/Filter"
 import Loader from "../Loader/Loader";
 
 const ItemListContainer = () => {
@@ -34,9 +33,9 @@ const ItemListContainer = () => {
 
     
     return (
-        <Container maxW="container.xl">
+        <Container maxW="container.xl" py={10}>
             <Flex justifyContent="center">
-                <Heading py={6}>Our products</Heading>
+                <Heading pb={6}>Our products</Heading>
             </Flex>
             {
                 loading
