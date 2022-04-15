@@ -1,4 +1,4 @@
-import { Flex, Grid, GridItem, Text, UnorderedList, ListItem, Center, Heading } from "@chakra-ui/react"
+import { Flex, Center, Heading } from "@chakra-ui/react"
 
 const Footer = () => {
     return (

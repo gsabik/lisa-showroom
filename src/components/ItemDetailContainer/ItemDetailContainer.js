@@ -26,7 +26,7 @@ const ItemDetailContainer = () => {
     },[])
 
     return (
-        <Container maxW="container.xl" p={0}>
+        <Container maxW="container.xl" p={10}>
             {
                 loading
                 ?

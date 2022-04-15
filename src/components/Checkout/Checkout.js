@@ -2,7 +2,7 @@ import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { db } from "../../firebase/config";
 import { useState, useContext } from "react"
 import { CartContext } from "../../context/CartContext"
-import { Container, Center, Flex, VStack, Heading, Text, FormControl, FormLabel, Input, Button } from "@chakra-ui/react"
+import { Container, Center, Flex, VStack, Heading, Text, FormControl, FormLabel, Input, Button, Checkbox } from "@chakra-ui/react"
 import { Link } from "react-router-dom";
 
 const Checkout = () => {
@@ -58,7 +58,7 @@ const Checkout = () => {
     }
 
     return ( 
-        <Container>
+        <Container maxW="container.xl">
             <Flex justifyContent="center">
                 <Heading py={6}>Checkout</Heading>
             </Flex>
@@ -88,13 +88,14 @@ const Checkout = () => {
                     <FormControl isRequired>
                         <FormLabel>Phone number</FormLabel>
                         <Input
-                            type="phone"
+                            type="tel"
                             placeholder="Phone number"
                             value={values.phone}
                             onChange={handleInputChange}
                             name="phone"
                         />
                     </FormControl>
+                    <Checkbox required>I understand that once the purchase is completed, I have a 30-day return period in case of regret of purchase or manufacturing defects.</Checkbox>
                     <Button type="submit">Submit</Button>
                 </VStack>
             </form>
