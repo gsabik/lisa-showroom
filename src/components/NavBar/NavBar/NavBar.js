@@ -5,7 +5,7 @@ import CartWidget from "../CartWidget/CartWidget"
 
 const NavBar = () => {
     return (
-        <Flex w="full" p={6} justifyContent="space-around" alignItems="center" bg="gray.50" > 
+        <Flex w="full" p={6} justifyContent="space-around" alignItems="center" bg="gray.50"> 
             <Link to="/"><Heading fontSize={{base:"xl", md:"2xl", lg:"4xl"}}>Lisa Showroom</Heading></Link>
             <HStack direction={{base:"column", md:"column"}} spacing={6}>
                 <Link to="/"><Text fontWeight="500">Home</Text></Link>

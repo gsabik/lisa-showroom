@@ -58,7 +58,7 @@ const Checkout = () => {
     }
 
     return ( 
-        <Container maxW="container.xl">
+        <Container maxW="container.xl" py={10}>
             <Flex justifyContent="center">
                 <Heading py={6}>Checkout</Heading>
             </Flex>

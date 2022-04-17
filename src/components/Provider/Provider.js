@@ -3,10 +3,11 @@ import providerLogo from "../../assets/foot-locker.svg"
 
 const Provider = () => {
     return (
-        <Container maxW="container.xl" py={10} >
-            <Flex justifyContent="center">
+        <Container maxW="container.xl" spacing={6} py={10} >
+            <Flex justifyContent="flex-start">
                 <Heading pb={6}>Provider</Heading>
             </Flex>
+            <Text fontSize="lg">Foot locker is our official supplier. For more than 5 years they have provided us with their products, therefore we know that the final product that our clients acquire is of excellent quality.</Text>
             <HStack display={{md:"flex"}}>
                 <VStack w={{md:"100%", lg:"40%"}} h="full" p={10} spacing={10} justifyContent="center">
                     <Image src={providerLogo}></Image>

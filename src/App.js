@@ -23,6 +23,7 @@ function App() {
             <Route path="/provider" element={<Provider/>}></Route>
             <Route path="/cart" element={<Cart/>}></Route>
             <Route path="/checkout" element={<Checkout/>}></Route>
+            <Route path="*" element={ <Navigate to="/"/> }/>
           </Routes>
           <Footer/>
         </div>

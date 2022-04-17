@@ -2,7 +2,7 @@ import { Flex, Center, Heading } from "@chakra-ui/react"
 
 const Footer = () => {
     return (
-        <Flex w="full" h="5rem" bg="gray.100">
+        <Flex w="full" h="4rem" bg="gray.100" position="fixed" bottom={0}>
            <Center w="full">
                <Heading fontSize="xl">©2022 Copyright - Lisa Showroom</Heading>
            </Center>
