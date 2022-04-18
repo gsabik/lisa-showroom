@@ -11,7 +11,7 @@ const CartWidget = () => {
     }
 
     return (
-        <Flex pt={2}>
+        <Flex>
             <Icon as={FaShoppingCart} w={6} h={6}></Icon>
             <Text px={2}>{countCart()}</Text>
         </Flex>

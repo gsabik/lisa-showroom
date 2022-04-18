@@ -23,7 +23,7 @@ const ItemDetail = ({id, brand, model, color, price, img, description, stock}) =
             addToCart(addItem);
         }
         toastAdd({
-            position:"bottom",
+            position:"bottom-right",
             description: "Added product",
             status: "success",
             duration: 3000,
@@ -31,7 +31,7 @@ const ItemDetail = ({id, brand, model, color, price, img, description, stock}) =
     }
 
     return (
-        <Center h="75%" py={{base:0, md:10, lg: 15}} display={{md: "flex"}}>
+        <Center h="100%" py={{base:0, md:10, lg: 15}} display={{md: "flex"}}>
             <VStack w="full" h="full" p={10} spacing={10} justifyContent="center">
                 <Image src={img}></Image>
             </VStack>
