@@ -4,7 +4,7 @@
 
 Es un eCommerce desarrollado con React JS para el curso de Coderhouse.
 
-## Demo
+## Visitar
 
 https://lisa-showroom.vercel.app/
 
