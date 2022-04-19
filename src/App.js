@@ -15,12 +15,12 @@ function App() {
           <NavBar/>
           <Routes>
             <Route path="/" element={<ItemListContainer/>}></Route>
-            <Route path="/category/:brandId" element={<ItemListContainer></ItemListContainer>}></Route> 
-            <Route path="/item/:itemId" element={<ItemDetailContainer></ItemDetailContainer>}></Route>
+            <Route path="/category/:brandId" element={<ItemListContainer/>}></Route> 
+            <Route path="/item/:itemId" element={<ItemDetailContainer/>}></Route>
             <Route path="/provider" element={<Provider/>}></Route>
             <Route path="/cart" element={<Cart/>}></Route>
             <Route path="/checkout" element={<Checkout/>}></Route>
-            <Route path="*" element={ <Navigate to="/"/> }/>
+            <Route path="*" element={<Navigate to="/"/>}/>
           </Routes>
         </div>
       </BrowserRouter>
