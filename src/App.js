@@ -6,7 +6,6 @@ import Provider from "./components/Provider/Provider";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import Cart from "./components/Cart/Cart";
 import Checkout from "./components/Checkout/Checkout";
-import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
             <Route path="/checkout" element={<Checkout/>}></Route>
             <Route path="*" element={ <Navigate to="/"/> }/>
           </Routes>
-          <Footer/>
         </div>
       </BrowserRouter>
     </CartProvider>

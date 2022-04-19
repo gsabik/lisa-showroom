@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { Link } from "react-router-dom"
-import { Container, Flex, HStack, Image, Heading, Text, Button, Icon, Center, VStack, Divider } from "@chakra-ui/react"
+import { Container, Flex, Center, HStack, VStack, Image, Heading, Text, Button, Icon } from "@chakra-ui/react"
 import { FaTrashAlt } from "react-icons/fa"
 
 const Cart = () => {

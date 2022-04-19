@@ -2,13 +2,18 @@ import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { db } from "../../firebase/config";
 import { useState, useContext } from "react"
 import { CartContext } from "../../context/CartContext"
-import { Container, Center, Flex, VStack, Heading, Text, FormControl, FormLabel, Input, Button, Checkbox } from "@chakra-ui/react"
-import { Link } from "react-router-dom";
+import { Container, Center, Flex, VStack, Heading, Text, FormControl, FormLabel, FormHelperText, FormErrorMessage, Input, Button, Checkbox } from "@chakra-ui/react"
+import CheckoutSucces from "./CheckoutSucces/CheckoutSucces";
 
 const Checkout = () => {
     const {cart, totalPriceCart, cleanCart} = useContext(CartContext);
     const [orderId, setOrderId] = useState(null);
-
+    const [values, setValues] = useState({
+        name: "",
+        email: "",
+        tel:""
+    })
+    
     const sendOrder = () => {
         const order = {
             buyer: values,
@@ -25,14 +30,7 @@ const Checkout = () => {
             })
     }
 
-    const [values, setValues] = useState({
-        name: "",
-        email: "",
-        phone:""
-    })
-
     const handleInputChange = (e) => {
-
         setValues({
             ...values,
             [e.target.name]: e.target.value
@@ -47,13 +45,7 @@ const Checkout = () => {
 
     if (orderId) {
         return (
-            <Center h="75vh">
-                <VStack spacing={4}>
-                    <Heading>Thanks for your purchase {values.name}!</Heading>
-                    <Text fontSize="xl">The ID of your purchase is: {orderId}.</Text>
-                    <Link to="/"><Button>Home</Button></Link>
-                </VStack>
-            </Center>
+            <CheckoutSucces orderId={orderId}/>
         )
     }
 
@@ -90,9 +82,9 @@ const Checkout = () => {
                         <Input
                             type="tel"
                             placeholder="Phone number"
-                            value={values.phone}
+                            value={values.tel}
                             onChange={handleInputChange}
-                            name="phone"
+                            name="tel"
                         />
                     </FormControl>
                     <Checkbox required>I understand that once the purchase is completed, I have a 30-day return period in case of regret of purchase or manufacturing defects.</Checkbox>

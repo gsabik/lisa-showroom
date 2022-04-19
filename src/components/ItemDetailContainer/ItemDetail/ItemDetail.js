@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../../../context/CartContext";
 import { Link } from "react-router-dom";
-import { VStack, Image, Text, Heading, HStack, Button, Center, Divider } from "@chakra-ui/react"
+import { VStack, Image, Text, Heading, HStack, Button, Center, Divider, Flex } from "@chakra-ui/react"
 import { useToast } from "@chakra-ui/react";
 import ItemCount from "../ItemCount/ItemCount"
 
@@ -29,14 +29,17 @@ const ItemDetail = ({id, brand, model, color, price, img, description, stock}) =
             duration: 3000,
         })
     }
-
+    
     return (
+        <>
+        <Flex justifyContent="center">
+            <Heading pb={6}>{brand} {model}</Heading>
+        </Flex>
         <Center h="100%" py={{base:0, md:10, lg: 15}} display={{md: "flex"}}>
-            <VStack w="full" h="full" p={10} spacing={10} justifyContent="center">
+            <VStack w="full" h="full" p={10} spacing={10} justifyContent="center" bg="gray.50">
                 <Image src={img}></Image>
             </VStack>
-            <VStack w="full" h="full" p={10} spacing={10} justifyContent="center" bg="gray.50">
-                <Heading>{brand} {model}</Heading>
+            <VStack w="full" h="full" p={10} spacing={10} justifyContent="stretch">
                 <Text fontSize="xl" lineHeight={10}>{description}</Text>
                 <HStack>
                     <Text fontSize="lg">{color}</Text>
@@ -56,6 +59,7 @@ const ItemDetail = ({id, brand, model, color, price, img, description, stock}) =
                 <Text fontWeight="500">All methods of payment.</Text>
             </VStack>
         </Center>
+        </>
     )
 }
 

@@ -34,13 +34,13 @@ const NavBar = () => {
                 w="100vw"
                 display={display}
                 bgColor="gray.50"
-                h="100vh"
-                pos="fixed"
+                h="40vh"
+                position="fixed"
                 top="0"
                 left="0"
                 zIndex={20}
                 overflowY="auto"
-                flexDir="column"
+                flexDirection="column"
             >
                 <Flex w="full" justifyContent="flex-end" p={6}>
                     <IconButton
