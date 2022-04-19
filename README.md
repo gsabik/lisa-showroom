@@ -1,5 +1,7 @@
 # Lisa Showroom
 
+## Sobre el proyecto
+
 Es un eCommerce desarrollado con React JS para el curso de Coderhouse.
 
 ## Demo
