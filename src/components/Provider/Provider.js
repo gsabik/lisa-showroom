@@ -1,4 +1,4 @@
-import { Container, Flex, HStack, VStack, Heading, Text, Image, Stat, StatLabel, StatNumber, StatHelpText, Divider, Link, ExternalLinkIcon } from "@chakra-ui/react"
+import { Container, Flex, HStack, VStack, Heading, Text, Image, Stat, StatLabel, StatNumber, StatHelpText, Divider, Link } from "@chakra-ui/react"
 import providerLogo from "../../assets/foot-locker.svg"
 import providerPage from "../../assets/foot-locker-page.png"
 
@@ -9,12 +9,12 @@ const Provider = () => {
                 <Heading pb={6}>Provider</Heading>
             </Flex>
             <VStack display={{md:"flex"}}>
-                <Text fontSize="lg">Foot locker is our official supplier. For more than 5 years they have provided us with their products, therefore we know that the final product that our clients acquire is of excellent quality.</Text>
+                <Text fontSize="lg" lineHeight={10}>Foot locker is our official supplier. For more than 5 years they have provided us with their products, therefore we know that the final product that our clients acquire is of excellent quality.</Text>
                 <VStack w={{md:"100%", lg:"80%"}} h="full" p={10} spacing={10} justifyContent="center">
                     <Image src={providerLogo} w={{md:"100%", lg:"80%"}}></Image>
-                    <Link href="https://www.footlocker-inc.com/" isExternal>More about Foot Locker Inc.</Link>
+                    <Link href="https://www.footlocker-inc.com/" isExternal color="gray.500" fontSize="xl">More about Foot Locker Inc.</Link>
                     <Image src={providerPage} w={{md:"100%", lg:"80%"}}></Image>
-                    <Link href="https://www.footlocker.com/" isExternal>Visit Foot Locker page</Link>
+                    <Link href="https://www.footlocker.com/" isExternal color="gray.500" fontSize="xl">Visit Foot Locker page</Link>
                 </VStack>
                 <VStack h="full" py={10} spacing={10} justifyContent="center">
                     <Heading fontSize="3xl">About Foot Locker Inc.</Heading>

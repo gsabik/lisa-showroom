@@ -2,7 +2,7 @@
 
 ## Sobre el proyecto
 
-Es un eCommerce desarrollado con React JS para el curso de Coderhouse.
+Lisa Showroom es un eCommerce desarrollado con React JS para el curso de Coderhouse. Se implementó Chakra UI para los componentes y React Router para las rutas. Como base de datos, Firestore.
 
 ## Visitar
 
@@ -13,13 +13,14 @@ https://lisa-showroom.vercel.app/
 - React JS
 - Chakra UI
 - React Router
-- Firebase
+- Firebase (Firestore)
 
 ## Features
 
 - Agregar productos al carrito
-- Borrar producto indiviualmente del carrito
+- Borrar producto del carrito
 - Borrar todos los productos del carrito
+- Simular y generar una orden de compra
 
 ## Sobre mi
 

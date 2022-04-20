@@ -45,6 +45,8 @@ const ItemDetail = ({id, brand, model, color, price, img, description, stock}) =
                     <Text fontSize="lg">{color}</Text>
                     <Divider borderColor="black" orientation="vertical" h="20px"/>
                     <Text fontSize="lg" fontWeight="500">${price},00</Text>
+                    <Divider borderColor="black" orientation="vertical" h="20px"/>
+                    <Text fontSize="lg">Stock: {stock - count} </Text>
                 </HStack>
                     {
                         isInCart(id)

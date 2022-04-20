@@ -87,7 +87,7 @@ const Checkout = () => {
                             name="tel"
                         />
                     </FormControl>
-                    <Checkbox required>I understand that once the purchase is completed, I have a 30-day return period in case of regret of purchase or manufacturing defects.</Checkbox>
+                    <Checkbox required lineHeight={8}>I understand that once the purchase is completed, I have a 30-day return period in case of regret of purchase or manufacturing defects.</Checkbox>
                     <Button type="submit">Submit</Button>
                 </VStack>
             </form>
