@@ -1,4 +1,4 @@
-import { Button, Flex, Image, Text, VStack } from "@chakra-ui/react"
+import { Flex, VStack, Image, Text, Button } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
 
 const Item = ({product}) => {
@@ -13,7 +13,7 @@ const Item = ({product}) => {
                 ></Image>
             </Link>
             <VStack py={4}>
-                <Text fontSize="xl" fontWeight="700">{product.brand + " " + product.model}</Text>
+                <Text fontSize="xl" fontWeight="700">{product.brand} {product.model}</Text>
                 <Text fontSize="lg">${product.price},00</Text>
                 <Link to={`/item/${product.id}`}><Button>See details</Button></Link>
             </VStack>
