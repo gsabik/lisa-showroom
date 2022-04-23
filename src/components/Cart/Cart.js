@@ -1,8 +1,8 @@
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { Link } from "react-router-dom"
-import { Container, Flex, Center, HStack, VStack, Image, Heading, Text, Button, Icon } from "@chakra-ui/react"
-import { FaTrashAlt } from "react-icons/fa"
+import { Container, Flex, Center, HStack, VStack, Heading, Text, Button } from "@chakra-ui/react"
+import CartList from "../Cart/CartList/CartList"
 
 const Cart = () => {
     const {cart, totalPriceCart, cleanCart, cleanItem} = useContext(CartContext);
@@ -28,19 +28,7 @@ const Cart = () => {
                 <Text fontSize="lg" fontWeight="500" w="25%" textAlign="center">Quantity</Text>
                 <Text fontSize="lg" fontWeight="500" w="25%" textAlign="center">Price</Text>
             </HStack>
-            {
-                cart.map((item) => (
-                    <HStack key={item.id} w="full" justifyContent="space-around" borderBottom="1px" borderColor="gray.300">
-                        <HStack w="50%" justifyContent="space-around">
-                            <Button variant="ghost" onClick={() => cleanItem(item.id)}><Icon as={FaTrashAlt}></Icon></Button>
-                            <Image src={item.img} w="10rem"></Image>
-                            <Text>{item.brand} {item.model}</Text>
-                        </HStack>
-                        <Text w="25%" textAlign="center">{item.count}</Text>
-                        <Text w="25%" textAlign="center">${item.price * item.count},00</Text>
-                    </HStack>
-                ))
-            }
+            <CartList/>
             <HStack justifyContent="space-around" pt={6}>
                 <Button onClick={cleanCart}>Clean</Button>
                 <Link to="/"><Button>View more products</Button></Link>
