@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../../../context/CartContext";
 import { Link } from "react-router-dom";
-import { VStack, Image, Text, Heading, HStack, Button, Center, Divider, Flex } from "@chakra-ui/react"
+import { Flex, Center, HStack, VStack, Image, Heading, Text, Button, Divider } from "@chakra-ui/react"
 import { useToast } from "@chakra-ui/react";
 import ItemCount from "../ItemCount/ItemCount"
 

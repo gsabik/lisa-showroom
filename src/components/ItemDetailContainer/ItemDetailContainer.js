@@ -23,7 +23,7 @@ const ItemDetailContainer = () => {
             .finally(() => {
                 setLoading(false);})
 
-    },[])
+    },[itemId])
 
     return (
         <Container maxW="container.xl" p={10}>

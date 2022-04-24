@@ -1,5 +1,5 @@
-import { Button, HStack, Icon, Text } from "@chakra-ui/react"
-import {BsPlus, BsDash} from "react-icons/bs"
+import { HStack, Text, Button, Icon } from "@chakra-ui/react"
+import { BsPlus, BsDash } from "react-icons/bs"
 
 const ItemCount = ({stock, count, setCount, handleAdd}) => {
     

@@ -2,7 +2,7 @@ import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { db } from "../../firebase/config";
 import { useState, useContext } from "react"
 import { CartContext } from "../../context/CartContext"
-import { Container, Center, Flex, VStack, Heading, Text, FormControl, FormLabel, FormHelperText, FormErrorMessage, Input, Button, Checkbox } from "@chakra-ui/react"
+import { Container, Flex, VStack, Heading, FormControl, FormLabel, Input, Button, Checkbox } from "@chakra-ui/react"
 import CheckoutSucces from "./CheckoutSucces/CheckoutSucces";
 
 const Checkout = () => {
