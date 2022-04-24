@@ -39,7 +39,7 @@ const NavBar = () => {
                 w="100vw"
                 display={display}
                 bgColor="gray.50"
-                h="40vh"
+                h="50vh"
                 position="fixed"
                 top="0"
                 left="0"
