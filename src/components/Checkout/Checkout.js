@@ -4,6 +4,7 @@ import { useState, useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { Container, Flex, VStack, Heading, FormControl, FormLabel, Input, Button, Checkbox } from "@chakra-ui/react"
 import CheckoutSucces from "./CheckoutSucces/CheckoutSucces";
+import CheckoutFailed from "./CheckoutFailed/CheckoutFailed";
 
 const Checkout = () => {
     const {cart, totalPriceCart, cleanCart} = useContext(CartContext);
@@ -41,6 +42,12 @@ const Checkout = () => {
         e.preventDefault();
 
         sendOrder();
+    }
+
+    if (cart.length === 0) {
+        return (
+        <CheckoutFailed/>
+        )
     }
 
     if (orderId) {

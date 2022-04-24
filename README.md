@@ -10,10 +10,10 @@ Lisa Showroom es un eCommerce desarrollado con React JS para el curso de Coderho
 
 ## Tecnologías
 
-- React JS
-- Chakra UI
-- React Router
-- Firebase (Firestore)
+- React JS https://es.reactjs.org/
+- Chakra UI https://chakra-ui.com/
+- React Router https://reactrouter.com/
+- Firebase (Firestore) https://firebase.google.com/
 
 ## Features
 
