@@ -44,15 +44,15 @@ const Checkout = () => {
         sendOrder();
     }
 
-    if (cart.length === 0) {
-        return (
-        <CheckoutFailed/>
-        )
-    }
-
     if (orderId) {
         return (
             <CheckoutSucces orderId={orderId}/>
+        )
+    }
+
+    if (cart.length === 0) {
+        return (
+        <CheckoutFailed/>
         )
     }
 
