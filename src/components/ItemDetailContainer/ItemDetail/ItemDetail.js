@@ -40,7 +40,7 @@ const ItemDetail = ({id, brand, model, color, price, img, description, stock}) =
                 <Image src={img}></Image>
             </VStack>
             <VStack w="full" h="full" p={10} spacing={10} justifyContent="stretch">
-                <Text fontSize="lg" fontWeight="500">ID product: {id}</Text>
+                <Text fontSize="lg" fontWeight="500">ID: {id}</Text>
                 <Text fontSize="xl" lineHeight={10}>{description}</Text>
                 <HStack>
                     <Text fontSize="lg">{color}</Text>
