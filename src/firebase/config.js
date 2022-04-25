@@ -1,4 +1,4 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp } from "firebase/app"
 import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
@@ -8,7 +8,7 @@ const firebaseConfig = {
   storageBucket: "lisa-showroom.appspot.com",
   messagingSenderId: "277055848697",
   appId: "1:277055848697:web:70097ed242f301c3862228"
-};
+}
 
-const app = initializeApp(firebaseConfig);
-export const db =  getFirestore(app);
+const app = initializeApp(firebaseConfig)
+export const db =  getFirestore(app)

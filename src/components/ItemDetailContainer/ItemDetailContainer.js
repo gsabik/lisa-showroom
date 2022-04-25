@@ -1,10 +1,10 @@
 import { db } from "../../firebase/config"
-import { doc, getDoc } from "firebase/firestore";
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { doc, getDoc } from "firebase/firestore"
+import { useState, useEffect } from "react"
+import { useParams } from "react-router-dom"
 import { Container } from "@chakra-ui/react"
-import ItemDetail from "./ItemDetail/ItemDetail";
-import Loader from "../Loader/Loader";
+import ItemDetail from "./ItemDetail/ItemDetail"
+import Loader from "../Loader/Loader"
 
 const ItemDetailContainer = () => {
 
@@ -21,7 +21,8 @@ const ItemDetailContainer = () => {
                 setItem({id: doc.id, ...doc.data()})
             })
             .finally(() => {
-                setLoading(false);})
+                setLoading(false);
+            })
 
     },[itemId])
 

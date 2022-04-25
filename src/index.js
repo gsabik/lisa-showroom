@@ -1,11 +1,11 @@
-import React from 'react';
-import {createRoot} from 'react-dom/client';
-import './index.css';
-import { ChakraProvider } from '@chakra-ui/react'
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"
+import { createRoot } from "react-dom/client"
+import { ChakraProvider } from "@chakra-ui/react"
+import reportWebVitals from "./reportWebVitals";
+import App from "./App";
+import "./index.css";
 
-const divRoot = document.getElementById('root');
+const divRoot = document.getElementById("root");
 const root = createRoot(divRoot);
 
 root.render(

@@ -1,10 +1,10 @@
-import { collection, addDoc, Timestamp } from "firebase/firestore";
-import { db } from "../../firebase/config";
+import { collection, addDoc, Timestamp } from "firebase/firestore"
+import { db } from "../../firebase/config"
 import { useState, useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { Container, Flex, VStack, Heading, FormControl, FormLabel, Input, Button, Checkbox } from "@chakra-ui/react"
-import CheckoutSucces from "./CheckoutSucces/CheckoutSucces";
-import CheckoutFailed from "./CheckoutFailed/CheckoutFailed";
+import CheckoutSucces from "./CheckoutSucces/CheckoutSucces"
+import CheckoutFailed from "./CheckoutFailed/CheckoutFailed"
 
 const Checkout = () => {
     const {cart, totalPriceCart, cleanCart} = useContext(CartContext);
@@ -13,7 +13,7 @@ const Checkout = () => {
         name: "",
         email: "",
         tel:""
-    })
+    });
     
     const sendOrder = () => {
         const order = {
@@ -35,7 +35,7 @@ const Checkout = () => {
         setValues({
             ...values,
             [e.target.name]: e.target.value
-        })
+        });
     }
 
     const handleSubmit = (e) => {

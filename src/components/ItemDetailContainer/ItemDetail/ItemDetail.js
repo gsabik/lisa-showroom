@@ -1,8 +1,8 @@
-import { useContext, useState } from "react";
-import { CartContext } from "../../../context/CartContext";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react"
+import { CartContext } from "../../../context/CartContext"
+import { Link } from "react-router-dom"
 import { Flex, Center, HStack, VStack, Image, Heading, Text, Button, Divider } from "@chakra-ui/react"
-import { useToast } from "@chakra-ui/react";
+import { useToast } from "@chakra-ui/react"
 import ItemCount from "../ItemCount/ItemCount"
 
 const ItemDetail = ({id, brand, model, color, price, img, description, stock}) => {

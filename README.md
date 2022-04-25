@@ -17,8 +17,8 @@ Lisa Showroom es un eCommerce desarrollado con React JS para el curso de Coderho
 
 ## Features
 
-- Agregar productos al carrito
-- Borrar producto del carrito
+- Agregar productos al carrito seleccionando la cantidad deseada
+- Borrar producto indiviualmente del carrito
 - Borrar todos los productos del carrito
 - Simular y generar una orden de compra
 

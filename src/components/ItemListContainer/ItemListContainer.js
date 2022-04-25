@@ -1,10 +1,10 @@
 import { db } from "../../firebase/config"
 import { collection, getDocs, query, where } from "firebase/firestore"
-import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 import { Container, Flex, Heading} from "@chakra-ui/react"
-import ItemList from "./ItemList/ItemList";
-import Loader from "../Loader/Loader";
+import ItemList from "./ItemList/ItemList"
+import Loader from "../Loader/Loader"
 
 const ItemListContainer = () => {
 
@@ -16,7 +16,7 @@ const ItemListContainer = () => {
         setLoading(true);
         
         const dataBase = collection(db, "products");
-        const q = brandId ? query(dataBase, where("brand", "==", brandId)) : dataBase
+        const q = brandId ? query(dataBase, where("brand", "==", brandId)) : dataBase;
         getDocs(q)
         .then(res => {setProducts(res.docs.map((doc) => {
             return {
