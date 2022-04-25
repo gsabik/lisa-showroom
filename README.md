@@ -2,7 +2,7 @@
 
 https://lisa-showroom.vercel.app/
 
-![lisa-showroom](https://user-images.githubusercontent.com/99271482/164957574-8ceeb566-5be9-49e3-8fbd-cc0fc238080b.gif)
+https://user-images.githubusercontent.com/99271482/165175171-102b4015-c0e9-433b-8291-70ad3dc8e63c.mp4
 
 ## Sobre el proyecto
 
