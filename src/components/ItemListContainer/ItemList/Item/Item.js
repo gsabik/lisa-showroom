@@ -1,9 +1,15 @@
 import { Flex, VStack, Image, Text, Button } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
 
-const Item = ({product}) => {
+const Item = ({ product }) => {
     return (
-        <Flex w="100%" flexDirection="column" boxShadow="xl" p={6} _hover={{boxShadow:"2xl"}}>
+        <Flex 
+            boxShadow="xl" 
+            flexDirection="column" 
+            _hover={{boxShadow:"2xl"}}
+            p={6} 
+            w="100%" 
+        >
             <Link to={`/item/${product.id}`}>
                 <Image 
                     src={product.img}

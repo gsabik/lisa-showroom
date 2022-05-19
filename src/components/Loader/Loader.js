@@ -4,10 +4,10 @@ const Loader =  () => {
     return (
         <Center h="75vh">
             <Spinner
-                thickness="5px"
-                emptyColor="gray.200"
                 color="BlackAlpha.500"
+                emptyColor="gray.200"
                 size="lg"
+                thickness="5px"
             />
         </Center>
     )

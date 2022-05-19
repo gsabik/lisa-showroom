@@ -3,7 +3,11 @@ import { Link } from "react-router-dom"
 const FooterSections = () => {
     return (
         <Flex w="50%" py={6}>
-            <Flex w="full" justifyContent="space-evenly" alignItems="flex-start">
+            <Flex
+                alignItems="flex-start"
+                justifyContent="space-evenly" 
+                w="full"
+            >
                 <Stack flex="1" pt={6}>
                     <Text fontSize="2xl" fontWeight="500">About</Text>
                     <UnorderedList styleType="none" m={0} pt={2} spacing={2}>

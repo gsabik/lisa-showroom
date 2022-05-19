@@ -9,9 +9,13 @@ const MenuBrands = ({listBrands}) => {
                 Brands
             </MenuButton>
             <MenuList>
-                {listBrands.map(({url, brand}) => (
-                    <Link key={brand} to={url}><MenuItem>{brand}</MenuItem></Link>
-                ))}
+                {
+                    listBrands.map(({ url, brand }) => (
+                    <Link key={brand} to={url}>
+                        <MenuItem>{brand}</MenuItem>
+                    </Link>
+                ))
+                }
             </MenuList>
         </Menu>
     )
