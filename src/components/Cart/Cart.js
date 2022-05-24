@@ -53,8 +53,8 @@ const Cart = () => {
                     fontWeight="500"
                     textAlign="center"
                     w="25%"
-                >Quantit
-                y</Text>
+                >Quantity
+                </Text>
                 <Text 
                     fontSize="lg"
                     fontWeight="500"

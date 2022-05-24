@@ -8,11 +8,10 @@ import Cart from "./components/Cart/Cart"
 import Checkout from "./components/Checkout/Checkout"
 import Footer from "./components/Footer/Footer"
 
-function App() {
+const App = () => {
   return (
     <CartProvider>
       <BrowserRouter>
-        <div className="App">
           <NavBar/>
           <Routes>
             <Route path="/" element={<ItemListContainer/>}></Route>
@@ -24,7 +23,6 @@ function App() {
             <Route path="*" element={<Navigate to="/"/>}/>
           </Routes>
           <Footer/>
-        </div>
       </BrowserRouter>
     </CartProvider>
   );
