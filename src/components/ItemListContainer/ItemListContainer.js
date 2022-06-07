@@ -1,13 +1,12 @@
-import { db } from "../../firebase/config"
-import { collection, getDocs, query, where } from "firebase/firestore"
-import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
-import { Container, Flex, Heading} from "@chakra-ui/react"
-import ItemList from "./ItemList/ItemList"
-import Loader from "../Loader/Loader"
+import { db } from "../../firebase/config";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { useState, useEffect } from "react";
+import { useParams } from 'react-router-dom';
+import { Container, Flex, Heading} from "@chakra-ui/react";
+import ItemList from "./ItemList/ItemList";
+import Loader from "../Loader/Loader";
 
 const ItemListContainer = () => {
-
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(false);
     const {brandId} = useParams();

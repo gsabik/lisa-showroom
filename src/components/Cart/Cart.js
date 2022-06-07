@@ -1,6 +1,6 @@
-import { useContext } from "react"
-import { CartContext } from "../../context/CartContext"
-import { Link } from "react-router-dom"
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
+import { Link } from "react-router-dom";
 import { 
     Button, 
     Container, 
@@ -10,8 +10,8 @@ import {
     Heading, 
     Text, 
     VStack 
-} from "@chakra-ui/react"
-import CartList from "./CartList/CartList"
+} from "@chakra-ui/react";
+import CartList from "./CartList/CartList";
 
 const Cart = () => {
     const { cart, totalPriceCart, cleanCart } = useContext(CartContext);
@@ -77,7 +77,7 @@ const Cart = () => {
                 <Text
                     fontSize="lg" 
                     fontWeight="500"
-                >Total: ${totalPriceCart()},00
+                >Total: ${totalPriceCart()}
                 </Text>
             </HStack>
         </Container>

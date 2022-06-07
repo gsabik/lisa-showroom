@@ -1,10 +1,20 @@
-import { collection, addDoc, Timestamp } from "firebase/firestore"
-import { db } from "../../firebase/config"
-import { useState, useContext } from "react"
+import { collection, addDoc, Timestamp } from "firebase/firestore";
+import { db } from "../../firebase/config";
+import { useState, useContext } from "react";
 import { CartContext } from "../../context/CartContext"
-import { Container, Flex, VStack, Heading, FormControl, FormLabel, Input, Button, Checkbox } from "@chakra-ui/react"
-import CheckoutSucces from "./CheckoutSucces/CheckoutSucces"
-import CheckoutFailed from "./CheckoutFailed/CheckoutFailed"
+import { 
+    Container,
+    Flex, 
+    VStack, 
+    Heading, 
+    FormControl, 
+    FormLabel, 
+    Input, 
+    Button, 
+    Checkbox 
+} from "@chakra-ui/react";
+import CheckoutSucces from "./CheckoutSucces/CheckoutSucces";
+import CheckoutFailed from "./CheckoutFailed/CheckoutFailed";
 
 const Checkout = () => {
     const {cart, totalPriceCart, cleanCart} = useContext(CartContext);

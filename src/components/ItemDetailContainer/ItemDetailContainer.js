@@ -1,13 +1,12 @@
-import { db } from "../../firebase/config"
-import { doc, getDoc } from "firebase/firestore"
-import { useState, useEffect } from "react"
-import { useParams } from "react-router-dom"
-import { Container } from "@chakra-ui/react"
-import ItemDetail from "./ItemDetail/ItemDetail"
-import Loader from "../Loader/Loader"
+import { db } from "../../firebase/config";
+import { doc, getDoc } from "firebase/firestore";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { Container } from "@chakra-ui/react";
+import ItemDetail from "./ItemDetail/ItemDetail";
+import Loader from "../Loader/Loader";
 
 const ItemDetailContainer = () => {
-
     const [item, setItem] = useState([]);
     const [loading, setLoading] = useState(false);
     const {itemId} = useParams();

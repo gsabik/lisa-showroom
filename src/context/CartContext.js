@@ -23,7 +23,7 @@ export const CartProvider = ({ children }) => {
     // Calculate total price
 
     const totalPriceCart  = () => {
-        return cart.reduce((acc, prod) => acc + prod.count * prod.price, 0);
+        return cart.reduce((acc, prod) => acc + prod.count * prod.price, 0).toFixed(2);;
     }
 
     // Clean all products

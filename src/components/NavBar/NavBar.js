@@ -1,10 +1,17 @@
-import { useState } from "react"
-import { Flex, HStack, VStack, Heading, Text, IconButton } from "@chakra-ui/react"
-import { GiHamburgerMenu } from "react-icons/gi"
-import { AiOutlineClose } from "react-icons/ai"
-import { Link } from "react-router-dom"
-import MenuBrands from "./MenuBrands/MenuBrands"
-import CartWidget from "./CartWidget/CartWidget"
+import { useState } from "react";
+import { 
+    Flex, 
+    HStack, 
+    VStack, 
+    Heading, 
+    Text, 
+    IconButton 
+} from "@chakra-ui/react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
+import MenuBrands from "./MenuBrands/MenuBrands";
+import CartWidget from "./CartWidget/CartWidget";
 
 const NavBar = () => {
     const [display, setDisplay] = useState("none");

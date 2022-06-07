@@ -1,7 +1,7 @@
-import { useContext } from "react"
-import { CartContext } from "../../../context/CartContext"
-import { HStack, Image, Text, Button, Icon } from "@chakra-ui/react"
-import { FaTrashAlt } from "react-icons/fa"
+import { useContext } from "react";
+import { CartContext } from "../../../context/CartContext";
+import { HStack, Image, Text, Button, Icon } from "@chakra-ui/react";
+import { FaTrashAlt } from "react-icons/fa";
 
 const CartList = () => {
     const { cart, cleanItem } = useContext(CartContext);
@@ -33,7 +33,7 @@ const CartList = () => {
                 <Text 
                     w="25%"
                     textAlign="center"
-                >${item.price * item.count},00
+                >${(item.price * item.count).toFixed(2)}
                 </Text>
             </HStack>
         ))

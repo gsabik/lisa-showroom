@@ -1,5 +1,5 @@
-import { Grid } from "@chakra-ui/react"
-import Item from "./Item/Item"
+import { Grid } from "@chakra-ui/react";
+import Item from "./Item/Item";
 
 
 const ItemList = ({ products }) => {

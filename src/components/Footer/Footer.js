@@ -1,5 +1,9 @@
-import { Flex, VStack, Text } from "@chakra-ui/react"
-import FooterSections from "./FooterSections/FooterSections"
+import {
+    Flex, 
+    VStack, 
+    Text 
+} from "@chakra-ui/react";
+import FooterSections from "./FooterSections/FooterSections";
 
 const Footer = () => {
     return (

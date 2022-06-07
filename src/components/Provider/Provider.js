@@ -1,6 +1,20 @@
-import { Container, Flex, HStack, VStack, Heading, Text, Image, Stat, StatLabel, StatNumber, StatHelpText, Divider, Link } from "@chakra-ui/react"
-import providerLogo from "../../assets/foot-locker.svg"
-import providerPage from "../../assets/foot-locker-page.png"
+import { 
+    Container, 
+    Flex, 
+    HStack, 
+    VStack, 
+    Heading, 
+    Text, 
+    Image, 
+    Stat, 
+    StatLabel, 
+    StatNumber, 
+    StatHelpText, 
+    Divider, 
+    Link 
+} from "@chakra-ui/react";
+import providerLogo from "../../assets/foot-locker.svg";
+import providerPage from "../../assets/foot-locker-page.png";
 
 const Provider = () => {
     return (

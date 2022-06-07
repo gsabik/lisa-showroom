@@ -1,7 +1,7 @@
-import { Center, VStack, Heading, Text, Button } from "@chakra-ui/react"
-import { Link } from "react-router-dom"
+import { Center, VStack, Heading, Text, Button } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
-const CheckoutSucces = ({orderId}) => {
+const CheckoutSucces = ({ orderId }) => {
     return (
         <Center h="90vh">
             <VStack spacing={6}>

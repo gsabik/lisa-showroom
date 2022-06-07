@@ -1,5 +1,5 @@
-import { Center, VStack, Heading, Button } from "@chakra-ui/react"
-import { Link } from "react-router-dom"
+import { Center, VStack, Heading, Button } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const CheckoutFailed = () => {
     return (

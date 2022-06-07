@@ -1,5 +1,11 @@
-import { Flex, VStack, Image, Text, Button } from "@chakra-ui/react"
-import { Link } from "react-router-dom"
+import { 
+    Flex, 
+    VStack, 
+    Image, 
+    Text, 
+    Button 
+} from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Item = ({ product }) => {
     return (

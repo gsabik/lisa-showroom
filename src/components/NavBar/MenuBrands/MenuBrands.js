@@ -1,6 +1,12 @@
-import { Button, Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react"
-import { IoIosArrowDown } from "react-icons/io"
-import { Link } from "react-router-dom"
+import { 
+    Button, 
+    Menu, 
+    MenuButton, 
+    MenuList, 
+    MenuItem 
+} from "@chakra-ui/react";
+import { IoIosArrowDown } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const MenuBrands = ({listBrands}) => {
     return (

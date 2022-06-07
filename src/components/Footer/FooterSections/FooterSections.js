@@ -1,5 +1,12 @@
-import { Flex, Stack, Text, UnorderedList, ListItem } from "@chakra-ui/react"
-import { Link } from "react-router-dom"
+import { 
+    Flex, 
+    Stack, 
+    Text, 
+    UnorderedList, 
+    ListItem 
+} from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+
 const FooterSections = () => {
     return (
         <Flex w="50%" py={6}>
