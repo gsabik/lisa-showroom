@@ -21,7 +21,9 @@ const Cart = () => {
             <Center h="90vh">
                 <VStack>
                     <Heading p={4}>You cart is empty. Go to home to add products!</Heading>
-                    <Link to="/"><Button>Home</Button></Link>
+                    <Link to="/">
+                        <Button>Home</Button>
+                    </Link>
                 </VStack>
             </Center>
         )

@@ -5,7 +5,6 @@ export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
 
     // Add product to cart
-
     const addToCart = (item) => {
         setCart([...cart, item]);
     }
@@ -15,31 +14,26 @@ export const CartProvider = ({ children }) => {
     }
 
     // Products in cart
-
     const countCart = () => {
         return cart.reduce((acc, prod) => acc + prod.count, 0);
     }
 
     // Calculate total price
-
     const totalPriceCart  = () => {
         return cart.reduce((acc, prod) => acc + prod.count * prod.price, 0).toFixed(2);;
     }
 
     // Clean all products
-
     const cleanCart = () => {
         return setCart([]);
     }
 
     // Clean product
-
     const cleanItem = (id) => {
         return setCart(cart.filter((prod) => prod.id !== id));
     }
 
     // Local storage
-
     useEffect(() => {
         let cart = localStorage.getItem("cart")
         if (cart) {
@@ -48,8 +42,9 @@ export const CartProvider = ({ children }) => {
     }, [])
 
     useEffect(() => {
-        localStorage.setItem("cart", JSON.stringify(cart))
-    }, [cart])
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+    }, [cart]);
 
     return (
         <CartContext.Provider value={{
@@ -60,9 +55,7 @@ export const CartProvider = ({ children }) => {
             totalPriceCart,
             cleanCart,
             cleanItem
-        }}>
-
-        {children}
+        }}>{children}
         </CartContext.Provider>
     )
 }
