@@ -1,7 +1,13 @@
 import { useContext } from "react";
-import { CartContext } from "../../../context/CartContext";
-import { HStack, Image, Text, Button, Icon } from "@chakra-ui/react";
+import {
+    HStack, 
+    Image, 
+    Text, 
+    Button, 
+    Icon 
+} from "@chakra-ui/react";
 import { FaTrashAlt } from "react-icons/fa";
+import { CartContext } from "../../../context/CartContext";
 
 const CartList = () => {
     const { cart, cleanItem } = useContext(CartContext);
@@ -37,7 +43,7 @@ const CartList = () => {
                 </Text>
             </HStack>
         ))
-    )
+    );
 }
 
 export default CartList

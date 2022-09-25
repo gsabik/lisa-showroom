@@ -23,7 +23,7 @@ const Footer = () => {
             </VStack>
             <FooterSections/>
         </Flex>
-    )
+    );
 }
 
 export default Footer

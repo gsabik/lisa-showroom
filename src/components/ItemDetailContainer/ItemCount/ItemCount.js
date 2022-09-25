@@ -40,7 +40,7 @@ const ItemCount = ({ stock, count, setCount, handleAdd }) => {
                 <Button onClick={handleAdd}>Add to cart</Button>
             </HStack>
         </HStack>
-    )
+    );
 }
 
 export default ItemCount

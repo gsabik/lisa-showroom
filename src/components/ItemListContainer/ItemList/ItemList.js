@@ -20,7 +20,7 @@ const ItemList = ({ products }) => {
                 )
             }
         </Grid>
-    )
+    );
 }
 
 export default ItemList

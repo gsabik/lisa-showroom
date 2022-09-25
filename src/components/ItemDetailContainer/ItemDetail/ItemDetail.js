@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
-import { CartContext } from "../../../context/CartContext";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../../context/CartContext";
 import { 
     Flex, 
     Center, 
@@ -109,7 +109,7 @@ const ItemDetail = ({ id, brand, model, color, price, img, description, stock })
                 </VStack>
             </Center>
         </>
-    )
+    );
 }
 
 export default ItemDetail

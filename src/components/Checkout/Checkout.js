@@ -1,6 +1,6 @@
+import { useState, useContext } from "react";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { db } from "../../firebase/config";
-import { useState, useContext } from "react";
 import { CartContext } from "../../context/CartContext"
 import { 
     Container,
@@ -38,7 +38,7 @@ const Checkout = () => {
             .then((doc) => {
                 setOrderId(doc.id);
                 cleanCart();
-            })
+            });
     }
 
     const handleInputChange = (e) => {
@@ -50,20 +50,19 @@ const Checkout = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
         sendOrder();
     }
 
     if (orderId) {
         return (
             <CheckoutSucces orderId={orderId}/>
-        )
+        );
     }
 
     if (cart.length === 0) {
         return (
-        <CheckoutFailed/>
-        )
+            <CheckoutFailed/>
+        );
     }
 
     return ( 
@@ -109,7 +108,7 @@ const Checkout = () => {
                 </VStack>
             </form>
         </Container>
-    )
+    );
 }
 
 export default Checkout

@@ -1,8 +1,12 @@
-import { db } from "../../firebase/config";
-import { collection, getDocs, query, where } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
-import { Container, Flex, Heading} from "@chakra-ui/react";
+import { db } from "../../firebase/config";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { 
+    Container, 
+    Flex, 
+    Heading 
+} from "@chakra-ui/react";
 import ItemList from "./ItemList/ItemList";
 import Loader from "../Loader/Loader";
 
@@ -28,8 +32,7 @@ const ItemListContainer = () => {
         .finally(() => {
             setLoading(false);})
 
-    },[brandId])
-
+    },[brandId]);
     
     return (
         <Container maxW="container.xl" py={10}>
@@ -44,7 +47,7 @@ const ItemListContainer = () => {
                 <ItemList products={products}></ItemList>
             }
         </Container>
-    )
+    );
 }
 
 export default ItemListContainer

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { 
     Flex, 
     VStack, 
@@ -5,7 +6,6 @@ import {
     Text, 
     Button 
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
 
 const Item = ({ product }) => {
     return (
@@ -30,7 +30,7 @@ const Item = ({ product }) => {
                 <Link to={`/item/${product.id}`}><Button>See details</Button></Link>
             </VStack>
         </Flex>
-    )
+    );
 }
 
 export default Item

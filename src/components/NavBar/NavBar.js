@@ -70,7 +70,7 @@ const NavBar = () => {
                 </VStack>
             </Flex>
         </Flex>
-    )
+    );
 }
 
 export default NavBar

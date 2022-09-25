@@ -1,5 +1,11 @@
-import { Center, VStack, Heading, Text, Button } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { 
+    Center, 
+    VStack, 
+    Heading, 
+    Text, 
+    Button 
+} from "@chakra-ui/react";
 
 const CheckoutSucces = ({ orderId }) => {
     return (
@@ -10,7 +16,7 @@ const CheckoutSucces = ({ orderId }) => {
                 <Link to="/"><Button>Home</Button></Link>
             </VStack>
         </Center>
-    )
+    );
 }
 
 export default CheckoutSucces

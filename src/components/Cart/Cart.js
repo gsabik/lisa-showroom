@@ -17,7 +17,7 @@ const Cart = () => {
     const { cart, totalPriceCart, cleanCart } = useContext(CartContext);
 
     if (cart.length === 0) {
-        return(
+        return (
             <Center h="90vh">
                 <VStack>
                     <Heading p={4}>You cart is empty. Go to home to add products!</Heading>
@@ -26,7 +26,7 @@ const Cart = () => {
                     </Link>
                 </VStack>
             </Center>
-        )
+        );
     }
 
     return (
@@ -83,7 +83,7 @@ const Cart = () => {
                 </Text>
             </HStack>
         </Container>
-    )
+    );
 }
 
 export default Cart

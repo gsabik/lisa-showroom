@@ -10,7 +10,7 @@ const Loader =  () => {
                 thickness="5px"
             />
         </Center>
-    )
+    );
 }
 
 export default Loader

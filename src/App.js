@@ -25,7 +25,7 @@ const App = () => {
           <Footer/>
       </BrowserRouter>
     </CartProvider>
-  )
+  );
 }
 
-export default App;
+export default App

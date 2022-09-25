@@ -1,5 +1,10 @@
-import { Center, VStack, Heading, Button } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { 
+    Center, 
+    VStack, 
+    Heading, 
+    Button
+} from "@chakra-ui/react";
 
 const CheckoutFailed = () => {
     return (
@@ -9,7 +14,7 @@ const CheckoutFailed = () => {
                 <Link to="/"><Button>Home</Button></Link>
             </VStack>
         </Center>
-    )
+    );
 }
 
 export default CheckoutFailed

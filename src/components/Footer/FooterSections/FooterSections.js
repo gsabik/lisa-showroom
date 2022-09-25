@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { 
     Flex, 
     Stack, 
@@ -5,7 +6,6 @@ import {
     UnorderedList, 
     ListItem 
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
 
 const FooterSections = () => {
     return (
@@ -39,7 +39,7 @@ const FooterSections = () => {
                 </Stack>       
             </Flex>        
         </Flex>
-    )
+    );
 }
 
 export default FooterSections

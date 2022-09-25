@@ -1,7 +1,7 @@
-import { db } from "../../firebase/config";
-import { doc, getDoc } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { db } from "../../firebase/config";
+import { doc, getDoc } from "firebase/firestore";
 import { Container } from "@chakra-ui/react";
 import ItemDetail from "./ItemDetail/ItemDetail";
 import Loader from "../Loader/Loader";
@@ -23,7 +23,7 @@ const ItemDetailContainer = () => {
                 setLoading(false);
             })
 
-    },[itemId])
+    },[itemId]);
 
     return (
         <Container maxW="container.xl" p={10}>
@@ -35,7 +35,7 @@ const ItemDetailContainer = () => {
                 <ItemDetail {...item}/>
             }     
         </Container>
-    )
+    );
 }
 
 export default ItemDetailContainer

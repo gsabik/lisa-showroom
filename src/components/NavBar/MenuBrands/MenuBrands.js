@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { 
     Button, 
     Menu, 
@@ -6,9 +7,8 @@ import {
     MenuItem 
 } from "@chakra-ui/react";
 import { IoIosArrowDown } from "react-icons/io";
-import { Link } from "react-router-dom";
 
-const MenuBrands = ({listBrands}) => {
+const MenuBrands = ({ listBrands }) => {
     return (
         <Menu>
             <MenuButton size="md" as={Button} rightIcon={<IoIosArrowDown/>}>
@@ -24,7 +24,7 @@ const MenuBrands = ({listBrands}) => {
                 }
             </MenuList>
         </Menu>
-    )
+    );
 }
 
 export default MenuBrands
