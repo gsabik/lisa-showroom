@@ -31,14 +31,13 @@ const Checkout = () => {
             items: cart,
             date: Timestamp.fromDate(new Date()),
             total: totalPriceCart()
-        }
+        };
 
         const ordersCollection = collection(db, "orders");
-        addDoc(ordersCollection, order)
-            .then((doc) => {
-                setOrderId(doc.id);
-                cleanCart();
-            });
+        addDoc(ordersCollection, order).then(doc => {
+			setOrderId(doc.id);
+			cleanCart();
+		});
     }
 
     const handleInputChange = (e) => {

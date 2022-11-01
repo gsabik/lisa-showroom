@@ -11,7 +11,7 @@ import { IoIosArrowDown } from "react-icons/io";
 const MenuBrands = ({ listBrands }) => {
     return (
         <Menu>
-            <MenuButton size="md" as={Button} rightIcon={<IoIosArrowDown/>}>
+            <MenuButton as={Button} size="md" rightIcon={<IoIosArrowDown/>}>
                 Brands
             </MenuButton>
             <MenuList>
@@ -20,7 +20,7 @@ const MenuBrands = ({ listBrands }) => {
                     <Link key={brand} to={url}>
                         <MenuItem>{brand}</MenuItem>
                     </Link>
-                ))
+                	))
                 }
             </MenuList>
         </Menu>

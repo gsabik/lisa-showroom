@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { useParams } from 'react-router-dom';
-import { db } from "../../firebase/config";
+import { useParams } from "react-router-dom";
 import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../../firebase/config";
 import { 
     Container, 
     Flex, 
@@ -17,7 +17,6 @@ const ItemListContainer = () => {
 
     useEffect(() => {
         setLoading(true);
-        
         const dataBase = collection(db, "products");
         const q = brandId ? query(dataBase, where("brand", "==", brandId)) : dataBase;
         getDocs(q)
@@ -31,7 +30,6 @@ const ItemListContainer = () => {
         .catch(err => console.log(err))
         .finally(() => {
             setLoading(false);})
-
     },[brandId]);
     
     return (

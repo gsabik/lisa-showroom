@@ -38,7 +38,7 @@ const ItemDetail = ({ id, brand, model, color, price, img, description, stock })
             description: "Added product",
             status: "success",
             duration: 3000,
-        })
+        });
     }
     
     return (
@@ -46,7 +46,14 @@ const ItemDetail = ({ id, brand, model, color, price, img, description, stock })
             <Flex justifyContent="center">
                 <Heading pb={6}>{brand} {model}</Heading>
             </Flex>
-            <Center py={{base:0, md:10, lg:15}} display={{md:"flex"}}>
+            <Center 
+				display={{md:"flex"}}
+				py={{
+					base: 0, 
+					md: 10, 
+					lg: 15
+				}} 
+			>
                 <VStack 
                     bg="gray.50"
                     h="full"

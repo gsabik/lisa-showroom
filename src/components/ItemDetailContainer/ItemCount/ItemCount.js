@@ -9,7 +9,7 @@ import { BsPlus, BsDash } from "react-icons/bs";
 const ItemCount = ({ stock, count, setCount, handleAdd }) => {
     
     const handleDecrement = () => {
-        if(count > 1){
+        if(count > 1) {
             setCount(count - 1);
         }
         else if(count <= 1);

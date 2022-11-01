@@ -10,7 +10,12 @@ const Footer = () => {
         <Flex
             alignItems="center" 
             bg="gray.50"
-            flexDirection={{base:"column", sm:"column", md:"row", lg:"row"}}
+            flexDirection={{
+				base:"column", 
+				sm:"column", 
+				md:"row", 
+				lg:"row"
+			}}
             justifyContent="space-around" 
         >
             <VStack

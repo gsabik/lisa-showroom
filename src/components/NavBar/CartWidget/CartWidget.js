@@ -1,6 +1,10 @@
 import { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
-import { Flex, Text, Icon} from "@chakra-ui/react";
+import { 
+	Flex, 
+	Text, 
+	Icon
+} from "@chakra-ui/react";
 import { FaShoppingCart } from "react-icons/fa";
 
 const CartWidget = () => {

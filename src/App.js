@@ -9,23 +9,23 @@ import Checkout from "./components/Checkout/Checkout";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
-  return (
-    <CartProvider>
-      <BrowserRouter>
-          <NavBar/>
-          <Routes>
-            <Route path="/" element={<ItemListContainer/>}></Route>
-            <Route path="/category/:brandId" element={<ItemListContainer/>}></Route> 
-            <Route path="/item/:itemId" element={<ItemDetailContainer/>}></Route>
-            <Route path="/provider" element={<Provider/>}></Route>
-            <Route path="/cart" element={<Cart/>}></Route>
-            <Route path="/checkout" element={<Checkout/>}></Route>
-            <Route path="*" element={<Navigate to="/"/>}/>
-          </Routes>
-          <Footer/>
-      </BrowserRouter>
-    </CartProvider>
-  );
+	return (
+		<CartProvider>
+		<BrowserRouter>
+			<NavBar/>
+			<Routes>
+				<Route path="/" element={<ItemListContainer/>}></Route>
+				<Route path="/category/:brandId" element={<ItemListContainer/>}></Route> 
+				<Route path="/item/:itemId" element={<ItemDetailContainer/>}></Route>
+				<Route path="/provider" element={<Provider/>}></Route>
+				<Route path="/cart" element={<Cart/>}></Route>
+				<Route path="/checkout" element={<Checkout/>}></Route>
+				<Route path="*" element={<Navigate to="/"/>}/>
+			</Routes>
+			<Footer/>
+		</BrowserRouter>
+		</CartProvider>
+	);
 }
 
 export default App

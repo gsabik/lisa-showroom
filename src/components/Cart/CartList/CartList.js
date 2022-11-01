@@ -13,7 +13,7 @@ const CartList = () => {
     const { cart, cleanItem } = useContext(CartContext);
 
     return (
-        cart.map( item => (
+        cart.map(item => (
             <HStack 
                 borderBottom="1px" 
                 borderColor="gray.300"

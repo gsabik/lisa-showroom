@@ -21,14 +21,27 @@ const NavBar = () => {
         {url:"/category/Nike", brand:"Nike"},
         {url:"/category/Jordan", brand:"Jordan"},
         {url:"/category/UA", brand:"Under Armour"}
-    ]
+    ];
     
     return (
         <Flex w="full" bg="gray.50" p={6}>
             {/* Desktop */}
-            <Flex display={['none', 'none', 'flex','flex']} w="full" justifyContent="space-between">
-                <Link to="/"><Heading fontSize="4xl" px={6}>Lisa Showroom</Heading></Link>
-                <HStack direction={{base:"column", md:"column"}} spacing={6} alignItems="center">
+            <Flex 
+				display={['none', 'none', 'flex','flex']} 
+				justifyContent="space-between"
+				w="full" 
+			>
+                <Link to="/">
+					<Heading fontSize="4xl" px={6}>Lisa Showroom</Heading>
+				</Link>
+                <HStack 
+					alignItems="center"
+					direction={{
+						base:"column", 
+						md:"column"
+					}} 
+					spacing={6} 
+				>
                     <Link to="/"><Text fontWeight="500">Home</Text></Link>
                     <Link to="/provider"><Text fontWeight="500">Provider</Text></Link>
                     <MenuBrands listBrands={listBrands}/>
@@ -36,11 +49,20 @@ const NavBar = () => {
                 </HStack >
             </Flex>
 
-            <Flex display={{base:"flex", md:"none", lg:"none"}} w="full" justifyContent="space-between">
-                <Link to="/"><Heading fontSize="2xl" px={6}>Lisa Showroom</Heading></Link>
+            <Flex 
+				display={{
+					base:"flex", 
+					md:"none", 
+					lg:"none"
+				}} 
+				justifyContent="space-between"
+				w="full" 
+			>
+                <Link to="/">
+					<Heading fontSize="2xl" px={6}>Lisa Showroom</Heading>
+				</Link>
                 <IconButton icon={<GiHamburgerMenu/>} onClick={() => setDisplay("flex")}/>
             </Flex>
-
             {/* Mobile */}
             <Flex
                 w="100vw"
